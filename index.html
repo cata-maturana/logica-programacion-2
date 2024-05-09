@@ -1,0 +1,21 @@
+<script>
+
+    // Pedir al usuario un número que equivale a los grados Celsius
+let gradosCelsius = prompt("Ingresa los grados Celsius:");
+
+// Convertir el input a un número
+gradosCelsius = parseFloat(gradosCelsius);
+
+// Verificar si se ingresó un número válido // !isNaN define si el dato es o no  un numero
+if (!isNaN(gradosCelsius)) {
+    // Convertir a Fahrenheit
+    let fahrenheit = (gradosCelsius * 9/5) + 32;
+    console.log("Grados Fahrenheit: " + fahrenheit);
+
+    // Convertir a Kelvin
+    let kelvin = gradosCelsius + 273.15;
+    console.log("Grados Kelvin: " + kelvin);
+} else {
+    console.log("Por favor, ingresa un número válido.");
+}
+</script>
